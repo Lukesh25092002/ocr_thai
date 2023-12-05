@@ -58,8 +58,8 @@ install all nodepackages used in to project: "npm install" and "yarn install"</b
 This will install all the packages mentioned in the package.json file
 - The code wont run straight away as the evvironment variables are not shared publicially with the project on github for security reasons</br>
 so make a .evn file of your own and add the following
- - HOST
- - PORT
- - DATABASE_LINK
- - DATABASE_PASSWORD
- - GOOGLE_VISION_API_KEY
+  - HOST
+  - PORT
+  - DATABASE_LINK
+  - DATABASE_PASSWORD
+  - GOOGLE_VISION_API_KEY
