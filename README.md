@@ -31,13 +31,14 @@ Two small icons (edit,delete) can edit and delete the card
 
 ## CRUD page
 first the user clicks on the edit option on any card option this page will open. This page contains all the options to edit the feilds. Also delete functionality is implemented.
-<img src="./Output/sample_data.png">
+<img src="./Output/CRUD_page.png">
 
 ## API endpoints
 There are many internal endpoints which user doesnt need to know but the one to offer to public related to CRUD on Id cards are as follows :-
 - Create: http://localhoost:3000/card, This is a put type request type
-</br>
+  </br>
   The card data has to be sent in json format in the body of the request
+  <img src="./Output/sample_data.png">
 
 - Read: http://localhost:3000/:identification_number, this a get request type </br>
   The endpoint will return a json object in earlier mentioned format in the result feild of the response with the mentioned identification_key
