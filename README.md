@@ -19,14 +19,17 @@ first the user clicks on the edit option on any card option this page will open.
 
 ## API endpoints
 There are many internal endpoints which user doesnt need to know but the one to offer to public related to CRUD on Id cards are as follows :-
--- Create: http://localhoost:3000/card, This is a put type request type
+- Create: http://localhoost:3000/card, This is a put type request type
 </br>
   The data has to be sent in json format in the body of the 
-  image--------------------------------------------------------------------------------------------------
+  image--------------------------------------------------------------
 
-- Read: http://localhost:3000/:identification_number, this a get request type
-- Update: http://localhoost:3000/:identification_number, this is a post request type
-- Delete: http://localhoost:3000/:identification_number, this is a DELETE request type
+- Read: http://localhost:3000/:identification_number, this a get request type </br>
+  The endpoint will return a json object in earlier mentioned format in the result feild of the response with the mentioned identification_key
+- Update: http://localhoost:3000/:identification_number, this is a post request type </br>
+  This endpoint will update the card record with mentioned identification_number. The feilds to be updated will be defined in the body of the request
+- Delete: http://localhoost:3000/:identification_number, this is a DELETE request type </br>
+  This endpoint will delete the card record with the mentioned identification_number
 
 # Table of contents
 
