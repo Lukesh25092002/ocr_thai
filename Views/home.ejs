@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="http://localhost:3000/public/Assets/homeStyle.css" type="text/css">
+    <!-- <link rel="stylesheet" href="../Public/Assets/homeStyle.css" type="text/css"> -->
+</head>
+<body>
+    <section id="pusher">
+        <h1 class="section_title">Card Ingestor</h1>
+        <p class="section_description">Now we provide with easy to use graphical user interface to upload the ID cards</p>
+        <div class="feild_ultimate_wrapper">
+            <div class="feild_subwrapper">
+                <div class="feild_wrapper">
+                    <label class="feild_label" for="identification_number">Identification Number : </label>
+                    <input class="feild_input" id="identification_number" type="text">
+                </div>
+            </div>
+            <div class="feild_subwrapper">
+                <div class="feild_wrapper">
+                    <label class="feild_label" for="date_of_birth">Date Of Birth</label>
+                    <input class="feild_input" id="date_of_birth" type="date">
+                </div>
+                <div class="feild_wrapper">
+                    <label class="feild_label" for="date_of_issue">Date of Issue : </label>
+                    <input class="feild_input" id="date_of_issue" type="date">
+                </div>
+                <div class="feild_wrapper">
+                    <label class="feild_label" for="date_of_expiry">Date of Expiry : </label>
+                    <input class="feild_input" id="date_of_expiry" type="date">
+                </div>
+            </div>
+            <div class="feild_subwrapper">
+                <div class="feild_wrapper">
+                    <label class="feild_label" for="first_name">First Name</label>
+                    <input class="feild_input" id="first_name" type="text">
+                </div>
+                <div class="feild_wrapper">
+                    <label class="feild_label" for="last_name">Last Name</label>
+                    <input class="feild_input" id="last_name" type="text">
+                </div>
+                <button id="create" class="btn_standard">Create card<i class="fa-solid fa-plus"></i></button>
+            </div>
+        </div>
+        <p class="warning">* Enter all the details</p>
+
+        <div id="image_uploader">
+            <h1 class="section_title">Upload image instead</h1>
+            <p class="section_description">If you have an image upload here. Our algorithm will automatically parse the image and extract necessary information</p>
+            <div class="feild_ultimate_wrapper">
+                <div class="feild_subwrapper">
+                    <div class="feild_wrapper">
+                        <p>Browse the image from local storage</p>
+                        <!-- <button class="feild_input">Browse...<i class="fa-solid fa-magnifying-glass"></i></button> -->
+                        <input id="browse" class="feild_input" type="file" accept="img/png, image/jpg">
+                    </div>
+                    <img id="preview" src="http://localhost:3000/public/Images/default_id_card.png">
+                    <button id="upload" class="btn_standard">Upload card<i class="fa-solid fa-file-arrow-up"></i></button>
+                </div>
+            </div>
+            <p class="warning">* Upload image in png, jpg or jpeg format</p>
+        </div>
+    </section>
+
+    <section id="puller">
+        <div class="filter_collection">
+            <div>
+                <h1 class="section_title">Card Extractor</h1>
+                <p class="section_description">View the existing cards. Filter according to your need by using the filter feature</p>
+            </div>
+            <div class="filter_wrapper">
+                <!-- <input id="filter_key" type="text" placeholder="key"> -->
+                <select id="filter_key">
+                    <option value="none">None</option>
+                    <option value="identification_number">Identification Number</option>
+                    <option value="name">First Name</option>
+                    <option value="last_name">Last Name</option>
+                </select>
+                <input id="filter_value" type="text" placeholder="value">
+                <button id="filter" class="btn_standard">Filter<i class="fa-solid fa-arrow-down-wide-short"></i></button>
+            </div>
+        </div>
+        <div id="log_collection">
+            <!-- <div class="log_wrapper">
+                <img class="" src="http://localhost:3000/public/Images/default_id_card.png" alt="">
+                <div class="log_details">
+                    <div class="log_detail">
+                        <p class="log_detail_label">Name:</p>
+                        <p class="log_detail_value">Nattarika Yangsuai</p>
+                    </div>
+                    <div class="log_detail">
+                        <p class="log_detail_label">Identification number:</p>
+                        <p class="log_detail_value">1103702071811</p>
+                    </div>
+                </div>
+                    <i class="icon edit_icon fa-solid fa-pen"></i>
+                    <i class="icon delete_icon fa-solid fa-trash-can"></i>
+            </div> -->
+        </div>
+    </section>
+
+    <footer>
+        <p>This project is in response to job appplication for Qoala from Lukesh Patil</p>
+        <p>Roll number:- <span>IIT2020101</span></p>
+    </footer>
+
+    <div id="overlay"></div>
+
+    <!-- <script src="../Public/Scripts/homeScript.js"></script> -->
+    <script src="http://localhost:3000/public/Scripts/homeScript.js"></script>
+</body>
+</html>

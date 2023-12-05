@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- <link rel="stylesheet" href="../Public/Assets/cardStyle.css"> -->
+    <link rel="stylesheet" href="http://localhost:3000/public/Assets/cardStyle.css">
+</head>
+<body>
+    <section id="card_wrapper">
+        <div class="section_header">
+            <div>
+                <h1 class="section_title">Edit</h1>
+                <p class="section_description">You are in editing mode now. Click on the feilds to edit them...</p>
+            </div>
+            <button id="cancel" class="btn_standard">Cancel<i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="split_view">
+            <img id="photo" src="http://localhost:3000/public/Images/default_id_card.png">
+            <button id="update" class="btn_standard">Save<i class="fa-regular fa-floppy-disk"></i></button>
+            <button id="delete" class="btn_standard">Delete<i class="fa-solid fa-trash-can"></i></button>
+        </div>
+        <div class="detail_ultimate_wrapper">
+            <div class="detail_subwrapper">
+                <div class="detail_wrapper">
+                    <label class="detail_label" for="identification_number">Identification Number:</label>
+                    <input id="identification_number" class="detail_input" type="text" value=<%=cardRecord['identification_number']%> readonly>
+                </div>
+            </div>
+            <div class="detail_subwrapper">
+                <div class="detail_wrapper">
+                    <label class="detail_label" for="first_name">First Name:</label>
+                    <input id="first_name" class="detail_input" type="text" value=<%=cardRecord['name']%>>
+                </div>
+                <div class="detail_wrapper">
+                    <label class="detail_label" for="last_name">Last Name:</label>
+                    <input id="last_name" class="detail_input" type="text" value="<%=cardRecord['last_name']%>">
+                </div>
+            </div>
+            <div class="detail_subwrapper">
+                <div class="detail_wrapper">
+                    <label class="detail_label" for="date_of_birth">Date of birth:</label>
+                    <input id="date_of_birth" class="detail_input" type="date" value=<%=cardRecord['date-of-birth']%>>
+                </div>
+                <div class="detail_wrapper">
+                    <label class="detail_label" for="date_of_issue">Date of issue:</label>
+                    <input id="date_of_issue" class="detail_input" type="date" value=<%=cardRecord['date-of-issue']%>>
+                </div>
+                <div class="detail_wrapper">
+                    <label class="detail_label" for="date_of_expiry">Date of expiry:</label>
+                    <input id="date_of_expiry" class="detail_input" type="date" value=<%=cardRecord['date-of-expiry']%>>
+                </div>
+            </div>
+        </div>
+        <p id="error">* Enter all details properly</p>
+    </section>
+    
+    <div id="overlay"></div>
+
+    <!-- <script src="../Public/Scripts/cardScript.js"></script> -->
+    <script src="http://localhost:3000/public/Scripts/cardScript.js"></script>
+</body>
+</html>

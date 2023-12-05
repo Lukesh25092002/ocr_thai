@@ -1,0 +1,5 @@
+Vision API in python :-
+https://www.youtube.com/watch?v=xKvffLRSyPk&list=PL3JVwFmb_BnSLFyVThMfEavAEZYHBpWEd
+
+JSON viewer :-
+https://codebeautify.org/jsonviewer
