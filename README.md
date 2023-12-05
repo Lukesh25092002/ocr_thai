@@ -58,7 +58,7 @@ There are many internal endpoints which user doesnt need to know but the one to 
  - Express
  - MongoDB
 
-# Requirements to run
+# Requirements to execute
 To run the server in your local system...
 - NodeJS is a must to start the project</br>
 to initilise the node modules run : "npm init" in your terminal and</br>
