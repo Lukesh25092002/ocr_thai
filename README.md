@@ -27,7 +27,7 @@ It also has an form to manually fill incase the image recognisation fails.
 
 Then by scrolling down one can see a scrollable view which displays all the inserted idcards in the database. You can filter them on basis of certain keys from the filter attribute.
 Two small icons (edit,delete) can edit and delete the card
-<img src="./Output/home_page_top_bottom.png">
+<img src="./Output/home_page_bottom.png">
 
 ## CRUD page
 first the user clicks on the edit option on any card option this page will open. This page contains all the options to edit the feilds. Also delete functionality is implemented.
