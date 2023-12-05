@@ -5,6 +5,7 @@ Thai id card OCR
 The website is a two page website
 - Home page
 - CRUD page
+- CRUD API endpoints
 
 ## Home page
 The page contains a option to uploadd an image of id card. By which it will automatically extract the necessary information and enter it in the database.
@@ -16,14 +17,27 @@ Two small icons (edit,delete) can edit and delete the
 ## CRUD page
 f user clicks on the edit option on any card option this page will open. This page contains all the options to edit the feilds. Also delete functionality is implemented.
 
+## API endpoints
+There are many internal endpoints which user doesnt need to know but the one to offer to public related to CRUD on Id cards are as follows :-
+-- Create: http://localhoost:3000/card, This is a put type request.
+  The data has to be sent in json format
+  image--------------------------------------------------
+
+- Read: http://localhost:3000/
+- Update: http://localhoost:3000/
+- Delete: http://localhoost:3000/
+
 # Table of contents
 
 # Technology used
-- HTML and embededJavaScript
-- CSS
-- JavaScript
-- Express
-- MongoDB
+- Frontend
+- - HTML and embededJavaScript
+- - CSS
+- - JavaScript
+-- Google vision API
+- Backend
+- - Express
+- - MongoDB
 
 # Usage
 The user 
