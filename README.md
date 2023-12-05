@@ -15,29 +15,30 @@ Then by scrolling down one can see a scrollable view which displays all the inse
 Two small icons (edit,delete) can edit and delete the 
 
 ## CRUD page
-f user clicks on the edit option on any card option this page will open. This page contains all the options to edit the feilds. Also delete functionality is implemented.
+first the user clicks on the edit option on any card option this page will open. This page contains all the options to edit the feilds. Also delete functionality is implemented.
 
 ## API endpoints
 There are many internal endpoints which user doesnt need to know but the one to offer to public related to CRUD on Id cards are as follows :-
--- Create: http://localhoost:3000/card, This is a put type request.
-  The data has to be sent in json format
-  image--------------------------------------------------
+-- Create: http://localhoost:3000/card, This is a put type request type
+</br>
+  The data has to be sent in json format in the body of the 
+  image--------------------------------------------------------------------------------------------------
 
-- Read: http://localhost:3000/
-- Update: http://localhoost:3000/
-- Delete: http://localhoost:3000/
+- Read: http://localhost:3000/:identification_number, this a get request type
+- Update: http://localhoost:3000/:identification_number, this is a post request type
+- Delete: http://localhoost:3000/:identification_number, this is a DELETE request type
 
 # Table of contents
 
 # Technology used
 - Frontend
-- - HTML and embededJavaScript
-- - CSS
-- - JavaScript
--- Google vision API
+  - HTML and embededJavaScript
+  - CSS
+  - JavaScript
+  - Google vision API
 - Backend
-- - Express
-- - MongoDB
+ - Express
+ - MongoDB
 
 # Usage
-The user 
+For you to run the 
