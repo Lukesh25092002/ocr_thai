@@ -23,19 +23,21 @@ The website is a two page website
 ## Home page
 The page contains a option to uploadd an image of id card. By which it will automatically extract the necessary information and enter it in the database.
 It also has an form to manually fill incase the image recognisation fails.
+<img src="./Output/home_page_top.png">
 
 Then by scrolling down one can see a scrollable view which displays all the inserted idcards in the database. You can filter them on basis of certain keys from the filter attribute.
-Two small icons (edit,delete) can edit and delete the 
+Two small icons (edit,delete) can edit and delete the card
+<img src="./Output/home_page_top_bottom.png">
 
 ## CRUD page
 first the user clicks on the edit option on any card option this page will open. This page contains all the options to edit the feilds. Also delete functionality is implemented.
+<img src="./Output/sample_data.png">
 
 ## API endpoints
 There are many internal endpoints which user doesnt need to know but the one to offer to public related to CRUD on Id cards are as follows :-
 - Create: http://localhoost:3000/card, This is a put type request type
 </br>
-  The data has to be sent in json format in the body of the 
-  image--------------------------------------------------------------
+  The card data has to be sent in json format in the body of the request
 
 - Read: http://localhost:3000/:identification_number, this a get request type </br>
   The endpoint will return a json object in earlier mentioned format in the result feild of the response with the mentioned identification_key
@@ -68,9 +70,6 @@ so make a .evn file of your own and add the following
   - DATABASE_LINK
   - DATABASE_PASSWORD
   - GOOGLE_VISION_API_KEY
-
-# Usage
-For you to run the code
 
 # Meta information of project
 - The project is of web development in javascript</br>
