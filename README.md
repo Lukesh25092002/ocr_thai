@@ -1,6 +1,19 @@
 # Project Name
 Thai id card OCR
 
+# Table of contents
+- Description
+  - Home page
+  - CRUD page
+- API endpoints
+  - Create
+  - Read
+  - Update
+  - Delete
+- Technology used
+- Requirements
+- Meta information of project
+
 # Description
 The website is a two page website
 - Home page
@@ -31,7 +44,6 @@ There are many internal endpoints which user doesnt need to know but the one to 
 - Delete: http://localhoost:3000/:identification_number, this is a DELETE request type </br>
   This endpoint will delete the card record with the mentioned identification_number
 
-# Table of contents
 
 # Technology used
 - Frontend
@@ -44,14 +56,7 @@ There are many internal endpoints which user doesnt need to know but the one to 
  - MongoDB
 
 # Requirements to run
-To run the server in your local system
-
-# Usage
-For you to run the code
-
-# Meta information of project
-- The project is of web development in javascript</br>
-- MongoDB is used as database to store cardRecord. Each cardRecord has a unique identification number associated to it on basis of which the CRUD operations mainly takes place i.e. identification_number is the main primary key of the database
+To run the server in your local system...
 - NodeJS is a must to start the project</br>
 to initilise the node modules run : "npm init" in your terminal and</br>
 install all nodepackages used in to project: "npm install" and "yarn install"</br>
@@ -63,3 +68,12 @@ so make a .evn file of your own and add the following
   - DATABASE_LINK
   - DATABASE_PASSWORD
   - GOOGLE_VISION_API_KEY
+
+# Usage
+For you to run the code
+
+# Meta information of project
+- The project is of web development in javascript</br>
+- MongoDB is used as database to store cardRecord. Each cardRecord has a unique identification number associated to it on basis of which the CRUD operations mainly takes place i.e. identification_number is the main primary key of the database
+- You need to install NodeJS to run it in local system
+- Also you need to create a mongoDB account and enter your DATABASE_LINK and DATABASE_PASSWORD as environment variables
