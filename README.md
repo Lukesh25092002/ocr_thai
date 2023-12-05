@@ -43,5 +43,23 @@ There are many internal endpoints which user doesnt need to know but the one to 
  - Express
  - MongoDB
 
+# Requirements to run
+To run the server in your local system
+
 # Usage
-For you to run the 
+For you to run the code
+
+# Meta information of project
+- The project is of web development in javascript</br>
+- MongoDB is used as database to store cardRecord. Each cardRecord has a unique identification number associated to it on basis of which the CRUD operations mainly takes place i.e. identification_number is the main primary key of the database
+- NodeJS is a must to start the project</br>
+to initilise the node modules run : "npm init" in your terminal and</br>
+install all nodepackages used in to project: "npm install" and "yarn install"</br>
+This will install all the packages mentioned in the package.json file
+- The code wont run straight away as the evvironment variables are not shared publicially with the project on github for security reasons</br>
+so make a .evn file of your own and add the following
+ - HOST
+ - PORT
+ - DATABASE_LINK
+ - DATABASE_PASSWORD
+ - GOOGLE_VISION_API_KEY
